@@ -1,0 +1,10 @@
+The following CSS code snippet causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This seemingly simple code can lead to unexpected layouts if not carefully managed.  The `float: left;` property can cause the div to collapse unexpectedly.  The issue arises when the total width of floated elements exceeds the parent container's width. 
