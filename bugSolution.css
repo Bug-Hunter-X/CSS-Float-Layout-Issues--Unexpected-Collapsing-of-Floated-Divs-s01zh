@@ -1,0 +1,16 @@
+The following CSS code demonstrates a solution by adding a clearfix:
+
+```css
+div.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+Alternatively, you can use other methods to clear floats, such as adding the `overflow: auto;` property to the parent container.
